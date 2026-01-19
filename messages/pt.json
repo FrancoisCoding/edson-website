@@ -1,0 +1,175 @@
+{
+  "site": {
+    "name": "Edson Kempinski Corretor Imoveis",
+    "tagline": "Curadoria de residencias de alto padrao",
+    "metaTitle": "Edson Imoveis Prime | Real Estate de Luxo",
+    "metaDescription": "Residencias exclusivas em Sao Paulo, Rio e litoral com atendimento premium e total sigilo."
+  },
+  "nav": {
+    "home": "Inicio",
+    "listings": "Imoveis",
+    "about": "Sobre",
+    "testimonials": "Depoimentos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "eyebrow": "Colecao Privada",
+    "title": "Residencias iconicas para quem exige o extraordinario",
+    "subtitle": "Selecao criteriosa de imoveis de luxo com atendimento boutique, visao estrategica e total discricao.",
+    "ctaPrimary": "Agendar visita",
+    "ctaSecondary": "Explorar imoveis"
+  },
+  "listings": {
+    "title": "Imoveis em destaque",
+    "subtitle": "Enderecos raros, arquitetura autoral e vistas cinematograficas.",
+    "filters": {
+      "city": "Cidade",
+      "type": "Tipo",
+      "price": "Faixa de preco",
+      "allCities": "Todas as cidades",
+      "allTypes": "Todos os tipos",
+      "rangeValue": "{{min}} ate {{max}}"
+    },
+    "details": {
+      "beds": "Quartos",
+      "baths": "Banheiros",
+      "areaLabel": "Area",
+      "areaUnit": "m2",
+      "viewDetails": "Ver detalhes"
+    },
+    "modal": {
+      "title": "Detalhes do imovel",
+      "descriptionTitle": "Descricao",
+      "cta": "Falar no WhatsApp",
+      "gallery": "Galeria de imagens"
+    },
+    "empty": "Nenhum imovel encontrado para os filtros selecionados.",
+    "items": {
+      "aurora": {
+        "title": "Villa Aurora",
+        "location": "Vila Nova Conceicao, Sao Paulo",
+        "description": "Mansao contemporanea com fachada escultorica, living integrado ao jardim e area gourmet com piscina de borda infinita."
+      },
+      "leblon": {
+        "title": "Leblon Skyline Penthouse",
+        "location": "Leblon, Rio de Janeiro",
+        "description": "Cobertura com vista total do mar, rooftop privativo e interiores assinados. Um refugio elegante a poucos passos da praia."
+      },
+      "jardins": {
+        "title": "Jardins Signature",
+        "location": "Jardins, Sao Paulo",
+        "description": "Apartamento amplo com pe direito duplo, marcenaria sob medida e varanda panoramica para o skyline da cidade."
+      },
+      "barra": {
+        "title": "Casa Oceano",
+        "location": "Barra da Tijuca, Rio de Janeiro",
+        "description": "Residencia linear com luz natural abundante, spa privado e deck suspenso para encontros ao entardecer."
+      },
+      "panorama": {
+        "title": "Panorama Atlantico",
+        "location": "Balneario Camboriu, Santa Catarina",
+        "description": "Cobertura sofisticada com vidro piso-teto, automacao completa e vista 180 graus do oceano."
+      },
+      "trancoso": {
+        "title": "Refugio Trancoso",
+        "location": "Trancoso, Bahia",
+        "description": "Villa tropical com suites independentes, paisagismo exuberante e acesso reservado a praia."
+      }
+    }
+  },
+  "about": {
+    "title": "Seu consultor de confianca em alto padrao",
+    "subtitle": "Relacionamento proximo, estrategia de valor e inteligencia de mercado.",
+    "body": "Ha mais de uma decada conectando clientes exigentes a residencias iconicas, com negociacoes discretas e um processo guiado por dados, arte e sensibilidade.",
+    "cta": "Conheca meu metodo",
+    "stats": {
+      "sales": "R$ 3,2B em vendas",
+      "experience": "15 anos de mercado",
+      "clients": "300+ clientes privados",
+      "cities": "8 cidades premium"
+    }
+  },
+  "testimonials": {
+    "title": "Depoimentos",
+    "subtitle": "A confianca de quem ja viveu a experiencia.",
+    "items": {
+      "t1": {
+        "quote": "O atendimento foi impecavel do primeiro contato ao fechamento. Encontramos um imovel que parecia feito sob medida.",
+        "name": "Marina A.",
+        "role": "Empresaria"
+      },
+      "t2": {
+        "quote": "Discricao total e uma curadoria de altissimo nivel. O processo foi elegante e extremamente eficiente.",
+        "name": "Ricardo F.",
+        "role": "Investidor"
+      },
+      "t3": {
+        "quote": "A equipe antecipou cada detalhe. Foi a melhor experiencia imobiliaria que ja tivemos.",
+        "name": "Luciana e Caio",
+        "role": "Colecionadores de arte"
+      }
+    }
+  },
+  "contact": {
+    "title": "Vamos conversar sobre seu proximo endereco",
+    "subtitle": "Agende uma visita privada ou solicite uma curadoria exclusiva.",
+    "form": {
+      "name": "Nome completo",
+      "email": "Email",
+      "phone": "WhatsApp",
+      "message": "Mensagem",
+      "submit": "Enviar mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada. Em breve entraremos em contato.",
+      "error": "Nao foi possivel enviar. Tente novamente.",
+      "privacy": "Seus dados estao protegidos e nao enviamos spam."
+    }
+  },
+  "footer": {
+    "title": "Pronto para descobrir seu proximo endereco?",
+    "cta": "Conversar no WhatsApp",
+    "address": "Alameda Lorena, 1800 - Sao Paulo",
+    "email": "edsoncarloslar@hotmail.com",
+    "phone": "+55 48 99995-1470",
+    "rights": "Todos os direitos reservados."
+  },
+  "accessibility": {
+    "button": "Acessibilidade",
+    "title": "Acessibilidade",
+    "fontSize": "Tamanho da fonte",
+    "increase": "Aumentar",
+    "decrease": "Diminuir",
+    "reset": "Resetar",
+    "contrast": "Alto contraste",
+    "motion": "Reduzir movimento",
+    "language": "Idioma",
+    "languageHint": "Alterar idioma do site",
+    "pt": "Portugues (BR)",
+    "en": "English (US)"
+  },
+  "ui": {
+    "backToTop": "Voltar ao topo",
+    "whatsapp": "WhatsApp",
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube"
+    },
+    "carouselPrev": "Anterior",
+    "carouselNext": "Proximo"
+  },
+  "taxonomy": {
+    "cities": {
+      "saoPaulo": "Sao Paulo",
+      "rioDeJaneiro": "Rio de Janeiro",
+      "balnearioCamboriu": "Balneario Camboriu",
+      "trancoso": "Trancoso"
+    },
+    "types": {
+      "house": "Casa",
+      "apartment": "Apartamento",
+      "penthouse": "Cobertura"
+    }
+  }
+}

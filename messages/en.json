@@ -1,0 +1,175 @@
+{
+  "site": {
+    "name": "Edson Prime Estates",
+    "tagline": "Curated high-end residences",
+    "metaTitle": "Edson Prime Estates | Luxury Real Estate",
+    "metaDescription": "Exclusive residences across Sao Paulo, Rio, and the coast with premium service and discretion."
+  },
+  "nav": {
+    "home": "Home",
+    "listings": "Listings",
+    "about": "About",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Private Collection",
+    "title": "Iconic residences for clients who demand the extraordinary",
+    "subtitle": "A refined selection of luxury properties with boutique service, strategic guidance, and absolute discretion.",
+    "ctaPrimary": "Schedule a visit",
+    "ctaSecondary": "Explore listings"
+  },
+  "listings": {
+    "title": "Featured listings",
+    "subtitle": "Rare addresses, signature architecture, and cinematic views.",
+    "filters": {
+      "city": "City",
+      "type": "Type",
+      "price": "Price range",
+      "allCities": "All cities",
+      "allTypes": "All types",
+      "rangeValue": "{{min}} to {{max}}"
+    },
+    "details": {
+      "beds": "Beds",
+      "baths": "Baths",
+      "areaLabel": "Area",
+      "areaUnit": "sq m",
+      "viewDetails": "View details"
+    },
+    "modal": {
+      "title": "Property details",
+      "descriptionTitle": "Description",
+      "cta": "Chat on WhatsApp",
+      "gallery": "Image gallery"
+    },
+    "empty": "No listings match your filters.",
+    "items": {
+      "aurora": {
+        "title": "Villa Aurora",
+        "location": "Vila Nova Conceicao, Sao Paulo",
+        "description": "Contemporary mansion with sculptural facade, open-plan living, and a gourmet area with an infinity-edge pool."
+      },
+      "leblon": {
+        "title": "Leblon Skyline Penthouse",
+        "location": "Leblon, Rio de Janeiro",
+        "description": "Penthouse with panoramic ocean views, private rooftop, and designer interiors. A refined escape steps from the beach."
+      },
+      "jardins": {
+        "title": "Jardins Signature",
+        "location": "Jardins, Sao Paulo",
+        "description": "Expansive apartment with double-height ceilings, custom millwork, and a panoramic balcony over the city."
+      },
+      "barra": {
+        "title": "Casa Oceano",
+        "location": "Barra da Tijuca, Rio de Janeiro",
+        "description": "Linear residence with abundant daylight, private spa, and a suspended deck for sunset gatherings."
+      },
+      "panorama": {
+        "title": "Panorama Atlantico",
+        "location": "Balneario Camboriu, Santa Catarina",
+        "description": "Sophisticated penthouse with floor-to-ceiling glass, full automation, and 180-degree ocean views."
+      },
+      "trancoso": {
+        "title": "Trancoso Retreat",
+        "location": "Trancoso, Bahia",
+        "description": "Tropical villa with independent suites, lush landscaping, and private access to the beach."
+      }
+    }
+  },
+  "about": {
+    "title": "Your trusted advisor in luxury real estate",
+    "subtitle": "Close relationships, value strategy, and market intelligence.",
+    "body": "For over a decade, connecting discerning clients to iconic residences with discreet negotiations and a process guided by data, artistry, and sensitivity.",
+    "cta": "Discover the method",
+    "stats": {
+      "sales": "R$ 3.2B in sales",
+      "experience": "15 years in the market",
+      "clients": "300+ private clients",
+      "cities": "8 premium cities"
+    }
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "Trust from clients who experienced the difference.",
+    "items": {
+      "t1": {
+        "quote": "The service was impeccable from first contact to closing. We found a home that felt made for us.",
+        "name": "Marina A.",
+        "role": "Entrepreneur"
+      },
+      "t2": {
+        "quote": "Total discretion and a world-class curation. The process was elegant and highly efficient.",
+        "name": "Ricardo F.",
+        "role": "Investor"
+      },
+      "t3": {
+        "quote": "The team anticipated every detail. It was the best real estate experience we have had.",
+        "name": "Luciana and Caio",
+        "role": "Art collectors"
+      }
+    }
+  },
+  "contact": {
+    "title": "Let us talk about your next address",
+    "subtitle": "Schedule a private visit or request an exclusive curation.",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "WhatsApp",
+      "message": "Message",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent. We will be in touch soon.",
+      "error": "Unable to send. Please try again.",
+      "privacy": "Your data is protected and we do not send spam."
+    }
+  },
+  "footer": {
+    "title": "Ready to discover your next address?",
+    "cta": "Chat on WhatsApp",
+    "address": "Alameda Lorena, 1800 - Sao Paulo",
+    "email": "edsoncarloslar@hotmail.com",
+    "phone": "+55 48 99995-1470",
+    "rights": "All rights reserved."
+  },
+  "accessibility": {
+    "button": "Accessibility",
+    "title": "Accessibility",
+    "fontSize": "Font size",
+    "increase": "Increase",
+    "decrease": "Decrease",
+    "reset": "Reset",
+    "contrast": "High contrast",
+    "motion": "Reduce motion",
+    "language": "Language",
+    "languageHint": "Change site language",
+    "pt": "Portuguese (BR)",
+    "en": "English (US)"
+  },
+  "ui": {
+    "backToTop": "Back to top",
+    "whatsapp": "WhatsApp",
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube"
+    },
+    "carouselPrev": "Previous",
+    "carouselNext": "Next"
+  },
+  "taxonomy": {
+    "cities": {
+      "saoPaulo": "Sao Paulo",
+      "rioDeJaneiro": "Rio de Janeiro",
+      "balnearioCamboriu": "Balneario Camboriu",
+      "trancoso": "Trancoso"
+    },
+    "types": {
+      "house": "House",
+      "apartment": "Apartment",
+      "penthouse": "Penthouse"
+    }
+  }
+}
