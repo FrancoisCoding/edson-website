@@ -17,10 +17,14 @@ export default function HeroSection() {
         muted
         loop
         playsInline
+        preload="metadata"
+        disablePictureInPicture
+        disableRemotePlayback
         aria-hidden="true"
-        poster="https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=1600&q=80"
+        poster="/images/hero-poster.jpg"
       >
-        <source src="https://cdn.coverr.co/videos/coverr-luxury-home-2591/1080p.mp4" type="video/mp4" />
+        <source src="/videos/hero.mp4" type="video/mp4" />
+        <source src="/videos/hero.webm" type="video/webm" />
       </video>
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-background/95" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(177,18,27,0.25),transparent_55%)]" />
