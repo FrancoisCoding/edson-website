@@ -4,6 +4,14 @@ import Image from "next/image";
 import { useTranslations } from "@/components/I18nProvider";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const statsKeys = ["sales", "experience", "clients", "cities"] as const;
 
@@ -48,9 +56,23 @@ export default function AboutSection() {
               </Card>
             ))}
           </div>
-          <Button variant="outline" className="border-border/70">
-            {t("about.cta")}
-          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="outline" className="border-border/70">
+                {t("about.cta")}
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="border-border/60 bg-background/95">
+              <DialogHeader className="pr-6">
+                <DialogTitle className="font-display text-2xl">
+                  {t("about.method.title")}
+                </DialogTitle>
+              </DialogHeader>
+              <DialogDescription className="leading-relaxed">
+                {t("about.method.description")} {t("about.method.negotiation")}
+              </DialogDescription>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </section>

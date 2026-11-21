@@ -11,7 +11,8 @@ import { formatCurrency } from "@/lib/format";
 
 const minPrice = Math.min(...listings.map((listing) => listing.price));
 const maxPrice = Math.max(...listings.map((listing) => listing.price));
-const priceStep = 250000;
+const priceStep = 100_000;
+const initialPriceRange = [minPrice, maxPrice];
 
 const cityOptions = Array.from(new Set(listings.map((listing) => listing.cityKey)));
 const typeOptions = Array.from(new Set(listings.map((listing) => listing.typeKey)));
@@ -20,10 +21,8 @@ export default function FeaturedListings() {
   const { t, locale } = useTranslations();
   const [selectedCity, setSelectedCity] = useState("all");
   const [selectedType, setSelectedType] = useState("all");
-  const [priceRange, setPriceRange] = useState<[number, number]>([
-    minPrice,
-    maxPrice,
-  ]);
+  const [priceRange, setPriceRange] = useState(initialPriceRange);
+  const [appliedPriceRange, setAppliedPriceRange] = useState(initialPriceRange);
 
   const filteredListings = useMemo(() => {
     return listings.filter((listing) => {
@@ -32,10 +31,10 @@ export default function FeaturedListings() {
       const matchesType =
         selectedType === "all" || listing.typeKey === selectedType;
       const matchesPrice =
-        listing.price >= priceRange[0] && listing.price <= priceRange[1];
+        listing.price >= appliedPriceRange[0] && listing.price <= appliedPriceRange[1];
       return matchesCity && matchesType && matchesPrice;
     });
-  }, [selectedCity, selectedType, priceRange]);
+  }, [selectedCity, selectedType, appliedPriceRange]);
 
   return (
     <section
@@ -106,7 +105,10 @@ export default function FeaturedListings() {
               max={maxPrice}
               step={priceStep}
               value={priceRange}
-              onValueChange={(value) => setPriceRange(value as [number, number])}
+              onValueChange={setPriceRange}
+              onValueCommit={setAppliedPriceRange}
+              onPointerUp={() => setAppliedPriceRange(priceRange)}
+              onPointerCancel={() => setPriceRange(appliedPriceRange)}
               aria-label={t("listings.filters.price")}
             />
           </div>

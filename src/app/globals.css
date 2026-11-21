@@ -105,6 +105,9 @@ html[data-reduce-motion="true"] *::after {
   body {
     @apply bg-background text-foreground;
   }
+  button:enabled {
+    cursor: pointer;
+  }
 }
 
 ::selection {

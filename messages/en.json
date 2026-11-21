@@ -82,6 +82,11 @@
     "subtitle": "Close relationships, value strategy, and market intelligence.",
     "body": "For over a decade, connecting discerning clients to iconic residences with discreet negotiations and a process guided by data, artistry, and sensitivity.",
     "cta": "Discover the method",
+    "method": {
+      "description": "I use market data to match your priorities with the right properties.",
+      "negotiation": "I arrange private visits and handle negotiations with discretion.",
+      "title": "How I work"
+    },
     "stats": {
       "sales": "R$ 3.2B in sales",
       "experience": "15 years in the market",

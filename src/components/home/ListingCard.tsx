@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -77,13 +78,17 @@ export default function ListingCard({ listing }: { listing: Listing }) {
           <DialogTrigger asChild>
             <Button className="w-full">{t("listings.details.viewDetails")}</Button>
           </DialogTrigger>
-          <DialogContent className="max-w-4xl border-border/60 bg-background/95 text-foreground">
-            <DialogHeader>
-              <DialogTitle className="font-display text-3xl">
+          <DialogContent
+            className="max-h-[calc(100dvh-2rem)] w-[calc(100%-2rem)] grid-cols-1
+              overflow-y-auto overscroll-contain border-border/60 bg-background/95 p-4
+              text-foreground sm:max-w-4xl sm:p-6"
+          >
+            <DialogHeader className="pr-6">
+              <DialogTitle className="font-display text-2xl wrap-anywhere sm:text-3xl">
                 {title}
               </DialogTitle>
             </DialogHeader>
-            <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,0.7fr)]">
               <div className="space-y-4">
                 <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground">
                   {t("listings.modal.gallery")}
@@ -92,7 +97,7 @@ export default function ListingCard({ listing }: { listing: Listing }) {
                   <CarouselContent>
                     {listing.images.map((image, index) => (
                       <CarouselItem key={image}>
-                        <div className="relative h-72 overflow-hidden rounded-2xl">
+                        <div className="relative h-60 overflow-hidden rounded-2xl sm:h-72">
                           <Image
                             src={image}
                             alt={`${title} ${index + 1}`}
@@ -104,8 +109,16 @@ export default function ListingCard({ listing }: { listing: Listing }) {
                       </CarouselItem>
                     ))}
                   </CarouselContent>
-                  <CarouselPrevious aria-label={t("ui.carouselPrev")} />
-                  <CarouselNext aria-label={t("ui.carouselNext")} />
+                  <div className="mt-3 flex justify-end gap-2">
+                    <CarouselPrevious
+                      className="static size-11 translate-y-0"
+                      aria-label={t("ui.carouselPrev")}
+                    />
+                    <CarouselNext
+                      className="static size-11 translate-y-0"
+                      aria-label={t("ui.carouselNext")}
+                    />
+                  </div>
                 </Carousel>
               </div>
               <div className="space-y-5">
@@ -113,9 +126,9 @@ export default function ListingCard({ listing }: { listing: Listing }) {
                   <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground">
                     {t("listings.modal.descriptionTitle")}
                   </p>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  <DialogDescription className="mt-3 leading-relaxed">
                     {description}
-                  </p>
+                  </DialogDescription>
                 </div>
                 <div className="space-y-3 rounded-2xl border border-border/60 bg-card/70 p-4">
                   <div className="flex items-center justify-between text-sm">
@@ -133,14 +146,14 @@ export default function ListingCard({ listing }: { listing: Listing }) {
                       {t("listings.details.areaUnit")}
                     </span>
                   </div>
-                  <div className="flex items-center justify-between text-sm">
+                  <div className="flex flex-wrap items-center justify-between gap-x-2 text-sm">
                     <span>{t("listings.filters.price")}</span>
                     <span className="font-display">
                       {formatCurrency(listing.price, locale)}
                     </span>
                   </div>
                 </div>
-                <Button asChild className="w-full gap-2">
+                <Button asChild className="h-auto min-h-9 w-full gap-2 text-center whitespace-normal">
                   <a
                     href={buildWhatsappUrl(title)}
                     target="_blank"

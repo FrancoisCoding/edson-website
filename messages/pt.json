@@ -82,6 +82,11 @@
     "subtitle": "Relacionamento proximo, estrategia de valor e inteligencia de mercado.",
     "body": "Ha mais de uma decada conectando clientes exigentes a residencias iconicas, com negociacoes discretas e um processo guiado por dados, arte e sensibilidade.",
     "cta": "Conheca meu metodo",
+    "method": {
+      "description": "Uso dados de mercado para selecionar imóveis de acordo com seu perfil.",
+      "negotiation": "Organizo visitas privativas e conduzo as negociações com discrição.",
+      "title": "Como trabalho"
+    },
     "stats": {
       "sales": "R$ 3,2B em vendas",
       "experience": "15 anos de mercado",
