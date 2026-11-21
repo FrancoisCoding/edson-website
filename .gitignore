@@ -19,10 +19,17 @@
 
 # production
 /build
+/.turbo
 
 # misc
 .DS_Store
 *.pem
+.env.local
+.env.production
+.eslintcache
+.vscode/
+.idea/
+*.log
 
 # debug
 npm-debug.log*
